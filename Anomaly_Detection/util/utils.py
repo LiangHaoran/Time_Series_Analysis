@@ -96,7 +96,7 @@ def weight_time(series, nn=0.9, model='p'):
     if model == 'p':
         weights = np.power(nn, np.arange(lens)[::-1])
     elif model == 'l':
-        weights = 0.2 * (np.array(lens))
+        weights = nn * (np.arange(lens))
     elif model == 's':
         weights = np.ones(lens)
     weights = np.array(weights).reshape(-1, 1)
@@ -246,10 +246,10 @@ def cal_fpr_tpr(detec, label):
 
 def eval(pred, true, verbose=0):
     """
-    计算精确率，召回率，f1
-    用于异常检测指标计算
+    Calculate precision, recall and f1
     :param pred: 0-1
     :param true: 0-1
+    :param verbose:
     :return:
     """
     pred = np.array(pred)
@@ -342,6 +342,3 @@ def search_threshold(pred, label, methods="matrix", verbose=0):
     return precision, recall, f1, mcc, fm, thr_opt
 
 
-# def plot_train_loss(loss):
-#     n = loss.shape[0]
-#     plt.figure()
