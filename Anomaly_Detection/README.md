@@ -5,6 +5,7 @@
 ## Dependencies
 
 TensorFlow > 1.12.0
+
 Keras > 2.2.4
 
 ## Usage
@@ -13,27 +14,49 @@ In the training and testing, the multi-time series will be encoded as signature 
 
 ### Genesis demonstrator dataset
 
-- Training MTS-DCGAN:
+- *Training MTS-DCGAN:*
 ```
-python code/Time_Series_Analysis/Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gens --phase train --niter 500 --lr_d 1e-4 --lr_g 4e-4
+python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gens --phase train --niter 500 --lr_d 1e-4 --lr_g 4e-4
 ```
 
-- Testing MTS-DCGAN:
+- *Testing MTS-DCGAN:*
 ```
-python code/Time_Series_Analysis/Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gens --phase test
+python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gens --phase test
 ```
 
 ### Shuttle dataset
-- Training MTS-DCGAN:
+- *Training MTS-DCGAN:*
 ```
-python code/Time_Series_Analysis/Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset shuttle --phase train --niter 500 --lr_d 1e-4 --lr_g 4e-2
+python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset shuttle --phase train --niter 500 --lr_d 1e-4 --lr_g 4e-2
 ```
 
-- Testing MTS-DCGAN:
+- *Testing MTS-DCGAN:*
 
 ```
-python code/Time_Series_Analysis/Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset shuttle --phase test
+python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset shuttle --phase test
 ```
 
 ### Satellite dataset
+- *Training MTS-DCGAN:*
+```
+python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset satellite --phase train --niter 500 --lr_d 1e-4 --lr_g 1e-4
+```
+
+- *Testing MTS-DCGAN:*
+
+```
+python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset satellite --phase test
+```
+
+### Gamma dataset
+- *Training MTS-DCGAN:*
+```
+python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gamaray --phase train --niter 500 --lr_d 1e-4 --lr_g 2e-4
+```
+
+- *Testing MTS-DCGAN:*
+
+```
+python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gamaray --phase test
+```
 
