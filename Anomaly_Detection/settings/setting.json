@@ -1,0 +1,116 @@
+{
+  "gamaray_settings":{
+    "dense_1_dim_g":1024,
+    "dense_2_dim_g":128,
+    "reshape_high_g":11,
+    "upsampling_1_g_size":3,
+    "filter_1_g":64,
+    "kernel_1_g_size":5,
+    "upsampling_2_g_size":2,
+    "filter_2_g":4,
+    "kernel_2_g_size":5,
+
+    "input_channel_d":4,
+    "filter_1_d":64,
+    "kernel_1_d_sie":5,
+    "maxpool_1_size":2,
+    "filter_2_d":128,
+    "kernel_2_d_sie":5,
+    "maxpool_2_size":2,
+    "dense_1_dim_d":1024,
+    "last_dense_dim_d":1,
+    "activation":"tanh",
+    "last_activation_d":"sigmoid",
+
+    "window_2":300,
+    "window_3":200,
+
+    "dim":66
+  },
+
+  "gens_settings":{"dense_1_dim_g":1024,
+    "dense_2_dim_g":128,
+    "reshape_high_g":9,
+    "upsampling_1_g_size":1,
+    "filter_1_g":64,
+    "kernel_1_g_size":5,
+    "upsampling_2_g_size":2,
+    "filter_2_g":4,
+    "kernel_2_g_size":5,
+
+    "input_channel_d":4,
+    "filter_1_d":64,
+    "kernel_1_d_sie":5,
+    "maxpool_1_size":2,
+    "filter_2_d":128,
+    "kernel_2_d_sie":5,
+    "maxpool_2_size":2,
+    "dense_1_dim_d":1024,
+    "last_dense_dim_d":1,
+    "activation":"tanh",
+    "last_activation_d":"sigmoid",
+
+    "window_2":20,
+    "window_3":10,
+
+    "dim":18
+  },
+
+  "satellite_settings":{
+    "dense_1_dim_g":1024,
+    "dense_2_dim_g":128,
+    "reshape_high_g":9,
+    "upsampling_1_g_size":2,
+    "filter_1_g":64,
+    "kernel_1_g_size":5,
+    "upsampling_2_g_size":2,
+    "filter_2_g":4,
+    "kernel_2_g_size":5,
+
+    "input_channel_d":4,
+    "filter_1_d":64,
+    "kernel_1_d_sie":5,
+    "maxpool_1_size":2,
+    "filter_2_d":128,
+    "kernel_2_d_sie":5,
+    "maxpool_2_size":2,
+    "dense_1_dim_d":1024,
+    "last_dense_dim_d":1,
+    "activation":"tanh",
+    "last_activation_d":"sigmoid",
+
+    "window_2":144,
+    "window_3":100,
+
+    "dim":36
+  },
+
+  "shuttle_settings":{
+    "dense_1_dim_g":1024,
+    "dense_2_dim_g":128,
+    "reshape_high_g":5,
+    "upsampling_1_g_size":1,
+    "filter_1_g":64,
+    "kernel_1_g_size":5,
+    "upsampling_2_g_size":2,
+    "filter_2_g":4,
+    "kernel_2_g_size":5,
+
+    "input_channel_d":4,
+    "filter_1_d":64,
+    "kernel_1_d_sie":2,
+    "maxpool_1_size":2,
+    "filter_2_d":128,
+    "kernel_2_d_sie":2,
+    "maxpool_2_size":2,
+    "dense_1_dim_d":1024,
+    "last_dense_dim_d":1,
+    "activation":"tanh",
+    "last_activation_d":"sigmoid",
+
+    "window_2":20,
+    "window_3":10,
+
+    "dim":10
+  }
+}
