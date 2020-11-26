@@ -60,7 +60,7 @@ python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gamaray --p
 python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gamaray --phase test
 ```
 
-- *Citing MTS-DCGAN:*
+## Citing MTS-DCGAN:
 
 If you use this repository or would like to refer the paper, please use the following BibTeX entry:
 
