@@ -60,3 +60,19 @@ python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gamaray --p
 python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gamaray --phase test
 ```
 
+- *Citing MTS-DCGAN:*
+
+If you use this repository or would like to refer the paper, please use the following BibTeX entry:
+
+```
+@article{LIANG2020,
+title = "Robust unsupervised anomaly detection via multi-time scale DCGANs with forgetting mechanism for industrial multivariate time series",
+journal = "Neurocomputing",
+year = "2020",
+issn = "0925-2312",
+doi = "https://doi.org/10.1016/j.neucom.2020.10.084",
+url = "http://www.sciencedirect.com/science/article/pii/S0925231220316970",
+author = "Haoran Liang and Lei Song and Jianxing Wang and Lili Guo and Xuzhi Li and Ji Liang",
+keywords = "Multivariate time series, Unsupervised anomaly detection, Multi-time scale, Deep convolutional generative adversarial networks, Threshold setting strategy"
+}
+```
