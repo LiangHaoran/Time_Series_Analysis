@@ -2,7 +2,7 @@
 
 **MTS-DCGAN** is a multi-time series anomaly detection framework proposed in our paper ***Robust unsupervised anomaly detection via multi-time scale DCGANs with forgetting mechanism for industrial multivariate time series***.
 
-![The framework of MTS-DCGAN](mts_dcgan.pdf)
+![The framework of MTS-DCGAN](mts_dcgan.png)
 
 ## Dependencies
 
