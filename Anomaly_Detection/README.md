@@ -2,6 +2,8 @@
 
 **MTS-DCGAN** is a multi-time series anomaly detection framework proposed in our paper ***Robust unsupervised anomaly detection via multi-time scale DCGANs with forgetting mechanism for industrial multivariate time series***.
 
+![The framework of MTS-DCGAN](mts_dcgan.pdf)
+
 ## Dependencies
 
 TensorFlow > 1.12.0
@@ -60,7 +62,15 @@ python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gamaray --p
 python Anomaly_Detection/core/run_DCGANs.py --model DCGANs --dataset gamaray --phase test
 ```
 
-## Citing MTS-DCGAN:
+## Datasets
+
+[Genesis Demonstrator Data](https://www.kaggle.com/inIT-OWL/genesis-demonstrator-data-for-machine-learning)
+
+[Satellite](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Landsat+Satellite%29)
+
+[Shuttle](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Shuttle%29)
+
+## Citing MTS-DCGAN
 
 If you use this repository or would like to refer the paper, please use the following BibTeX entry:
 
