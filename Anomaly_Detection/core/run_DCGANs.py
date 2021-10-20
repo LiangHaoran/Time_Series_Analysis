@@ -9,8 +9,6 @@ mpl.use('Agg')
 from sklearn.preprocessing import MinMaxScaler
 import json
 import random
-from math import isinf
-from PIL import Image
 import math
 import tensorflow as tf
 from tqdm import tqdm

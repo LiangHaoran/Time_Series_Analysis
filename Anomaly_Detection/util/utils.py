@@ -8,10 +8,8 @@ import matplotlib as mpl
 mpl.use('Agg')
 from sklearn.metrics import confusion_matrix
 import random
-from math import isinf
 import math
 from tqdm import tqdm
-from PIL import Image
 import warnings
 import time
 import argparse
