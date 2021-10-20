@@ -308,7 +308,6 @@ def main(opt, model):
 
 
 if __name__ == "__main__":
-    tf.random.set_seed(666)
     opt = Options().parse()
     if opt.model == 'DCGANs':
         if opt.phase == 'train':
