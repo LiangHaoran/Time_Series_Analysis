@@ -6,27 +6,13 @@ import numpy as np
 import pandas as pd
 import matplotlib as mpl
 mpl.use('Agg')
-import matplotlib.pyplot as plt
-from collections import Counter
 from sklearn.preprocessing import MinMaxScaler
-import os
-import torch
 import json
-import os.path
-from sklearn import preprocessing
-from sklearn.ensemble import RandomForestClassifier
-from sklearn import metrics
-from scipy import stats
-from sklearn.metrics.pairwise import manhattan_distances
-from scipy.stats import pearsonr
-from sklearn.model_selection import KFold
 import random
-from nltk.metrics.distance import edit_distance
-import csv
-from numpy import array, zeros, full, argmin, inf, ndim
-from scipy.spatial.distance import cdist
 from math import isinf
+from PIL import Image
 import math
+import tensorflow as tf
 from tqdm import tqdm
 from keras.layers import Masking, Embedding
 from keras.models import Sequential
@@ -36,16 +22,17 @@ from keras.layers import LSTM
 from keras.models import Model
 from keras.layers import Dense, Dropout, Conv1D, MaxPooling1D, Flatten, Input, BatchNormalization, Activation,Reshape, UpSampling2D, Conv2D, MaxPooling2D
 from keras import optimizers
-from PIL import Image
 from keras.layers import LeakyReLU
-from home.poac.code.Time_Series_Analysis.Anomaly_Detection.util.utils import search_threshold, load_data
-from home.poac.code.Time_Series_Analysis.Anomaly_Detection.core.options import Options
 from keras.callbacks import EarlyStopping
 from keras.optimizers import SGD, Adam
 import warnings
 import time
 import argparse
 warnings.filterwarnings('ignore')
+
+# load local package
+from home.poac.code.Time_Series_Analysis.Anomaly_Detection.util.utils import search_threshold, load_data
+from home.poac.code.Time_Series_Analysis.Anomaly_Detection.core.options import Options
 
 
 def generator_model(input_size, settings):
@@ -321,7 +308,7 @@ def main(opt, model):
 
 
 if __name__ == "__main__":
-    torch.manual_seed(1)
+    tf.random.set_seed(666)
     opt = Options().parse()
     if opt.model == 'DCGANs':
         if opt.phase == 'train':
